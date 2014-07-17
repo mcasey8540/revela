@@ -10,7 +10,7 @@ angular.module('revelaApp', [
   'controllers'
 ]).
 config(['$routeProvider', function($routeProvider) {
-  $routeProvider.when('/view1', {templateUrl: 'partials/partial1.html', controller: 'MyCtrl1'});
-  $routeProvider.when('/view2', {templateUrl: 'partials/partial2.html', controller: 'MyCtrl2'});
-  $routeProvider.otherwise({redirectTo: '/view1'});
+  $routeProvider.when('/home', {templateUrl: 'partials/home.html', controller: 'HomeCtrl'});
+  $routeProvider.when('/tenants', {templateUrl: 'partials/tenants.html', controller: 'TenantCtrl'});
+  $routeProvider.otherwise({redirectTo: '/home'});
 }]);

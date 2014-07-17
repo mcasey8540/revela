@@ -3,9 +3,9 @@
 /* Controllers */
 
 angular.module('controllers', []).
-  controller('MyCtrl1', [function() {
+  controller('HomeCtrl', [function() {
 
   }])
-  .controller('MyCtrl2', [function() {
+  .controller('TenantCtrl', [function() {
 
   }]);
