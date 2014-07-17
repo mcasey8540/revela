@@ -32,3 +32,18 @@
 body{
     font-family:"Trebuchet MS";   
 }
+
+/*
+    Navbar
+*/
+
+/*.brand
+{
+  background: url(img/brand/revela_logo.png) no-repeat left center;
+  height: 20px;
+  width: 100px;
+}*/
+
+#brand-logo{
+  width: 120px;
+}
