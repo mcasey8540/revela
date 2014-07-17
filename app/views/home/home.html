@@ -1,3 +1,4 @@
-<div class="city-image">
+<div class="city-image" >
+    <select class="userrole-dropdown" data-ng-model="userRole" data-ng-options="role.name for role in userRoles"></select>   
     <img data-ng-src="{{currentcity ? currentcity : 'img/cities/New_York.png'}}">
 </div>

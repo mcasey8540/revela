@@ -14,10 +14,29 @@ revelaControllers.controller('HomeCtrl', ['$rootScope', '$scope', '$routeParams'
         }        
         
     };
+            
+    $scope.userRoles = [
+      {name:'I\'m a', link:'home'},
+      {name:'Tenant', link:'#!/tenants'},
+      {name:'Service', link:'#!/service'},
+      {name:'Property Manager', link: '#!/propertymanagers'},
+      {name:'Property Owner', link: '#!/propertyowners'}
+    ];    
     
+    $scope.userRole = $scope.userRoles[0]; 
+    
+   $scope.$watch('userRole', function(value) {
+       if(value.name !== "I\'m a" && $scope.userRoles.length === 5 )
+       {
+          $scope.userRoles.shift();
+       }else{
+           $location.path   
+       }
+   });
+        
     function changeBackground(position){
 
-        //This is the callback function that will determine the location of the user and change the background accordingly
+        //This is the callback functin that will determine the location of the user and change the background accordingly
 
         //Creates geocoder used for reverse geocoding
         var geocoder = new google.maps.Geocoder();
