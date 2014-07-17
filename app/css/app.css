@@ -30,8 +30,20 @@
 }
 
 body{
+    margin-top: 120px;
     font-family:"Trebuchet MS";   
 }
+
+.container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+
+
 
 /*
     Navbar
@@ -44,6 +56,15 @@ body{
   width: 100px;
 }*/
 
+.city-image{
+    overflow: hidden;
+    width: 100%;
+}
+
 #brand-logo{
   width: 120px;
+}
+
+.navbar{
+  min-height: 120px;
 }
