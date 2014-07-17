@@ -1,11 +1,20 @@
 'use strict';
-
+ 
 /* Directives */
-
-
-angular.module('directives', []).
-  directive('appVersion', ['version', function(version) {
-    return function(scope, elm, attrs) {
-      elm.text(version);
+  
+revelaDirectives.directive('jqdatepicker', function () {
+    return {
+        restrict: 'A',
+        require: 'ngModel',
+        transclude: true,
+        link: function (scope, element, attrs, ngModelCtrl) {
+ 
+            element.datepicker({
+                dateFormat: 'yy-mm-dd',
+            });
+            element.css({
+                cursor: 'pointer'
+            });
+        }
     };
-  }]);
+});
