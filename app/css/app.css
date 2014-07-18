@@ -57,6 +57,7 @@ body{
 .city-image{
     overflow: hidden;
     width: 100%;
+    height: 575px;
 }
 
 #brand-logo{
@@ -67,6 +68,14 @@ body{
   min-height: 120px;
 }
 
+#footer-divider{
+    color: lightgrey;
+    height: 40px;
+    width: 100%;
+    display:block;
+}
+
+
 .userrole-dropdown{
     font-size: 25px;
     height: 50px;
@@ -76,9 +85,19 @@ body{
     vertical-align: middle;
     text-align: center;
     top: 200px;
-    width: 300px;
-    z-index: 2000;  
+    width: 300px;  
     padding: 5px; 
 }
 
+.revelatabs{
+    width: 50%;
+    margin: 0 auto;
+}
+
+#revelatabspage{
+    color: lightgrey;
+    height: 550px;
+    width: 100%;
+    display:block;   
+}
 

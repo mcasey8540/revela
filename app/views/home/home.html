@@ -1,4 +1,23 @@
 <div class="city-image" >
-    <select class="userrole-dropdown" data-ng-model="userRole" data-ng-options="role.name for role in userRoles"></select>   
+    <select class="userrole-dropdown" data-ng-model="userRole" data-ng-change="changeUserRole()" data-ng-options="role.name for role in userRoles"></select>   
     <img data-ng-src="{{currentcity ? currentcity : 'img/cities/New_York.png'}}">
 </div>
+
+<div id="footer-divider"></div>
+
+<div id="revelatabspage">
+    <ul class="nav nav-tabs revelatabs" role="tablist">
+      <li class="active"><a href="#!" role="tab" data-toggle="tab">Tenants</a></li>
+      <li><a href="#!/profile" role="tab" data-toggle="tab">Property Managers</a></li>
+      <li><a href="#!/messages" role="tab" data-toggle="tab">Property Owners</a></li>
+      <li><a href="#!/settings" role="tab" data-toggle="tab">Service</a></li>
+    </ul>
+
+    <!-- Tab panes -->
+    <div id="revelatabs" class="tab-content revelatabs">
+      <div class="tab-pane active" id="home">...</div>
+      <div class="tab-pane" id="profile">...</div>
+      <div class="tab-pane" id="messages">...</div>
+      <div class="tab-pane" id="settings">...</div>
+    </div>
+</div>    
