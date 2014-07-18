@@ -1,4 +1,5 @@
 <div class="city-image" >
+    <span id="selecttitle">I'm a</span>
     <select class="userrole-dropdown" data-ng-model="userRole" data-ng-change="changeUserRole()" data-ng-options="role.name for role in userRoles"></select>   
     <img data-ng-src="{{currentcity ? currentcity : 'img/cities/New_York.png'}}">
 </div>
@@ -7,9 +8,9 @@
 
 <div id="revelatabspage">
     <ul class="nav nav-tabs revelatabs" role="tablist">
-      <li data-ng-class="{ active : userRole.name=='Tenant'}" data-ng-click="userRole=userRoles[0]"><span class="revtab">Tenant</span></li>
-      <li data-ng-class="{ active : userRole.name=='Property Manager'}" data-ng-click="userRole=userRoles[2]"><span class="revtab">Property Manager</span></li>
-      <li data-ng-class="{ active : userRole.name=='Property Owner'}" data-ng-click="userRole=userRoles[3]"><span class="revtab">Property Owner</span></li>
-      <li data-ng-class="{ active : userRole.name=='Service' }" data-ng-click="userRole=userRoles[1]"><span class="revtab" >Service</span></li>
+      <li data-ng-class="{ active : userRole.name==userRoles[0].name}" data-ng-click="userRole=userRoles[0]"><span class="revtab" data-ng-bind="userRoles[0].name"></span></li>
+      <li data-ng-class="{ active : userRole.name==userRoles[2].name}" data-ng-click="userRole=userRoles[2]"><span class="revtab" data-ng-bind="userRoles[2].name">Property Manager</span></li>
+      <li data-ng-class="{ active : userRole.name==userRoles[3].name}" data-ng-click="userRole=userRoles[3]"><span class="revtab" data-ng-bind="userRoles[3].name">Property Owner</span></li>
+      <li data-ng-class="{ active : userRole.name==userRoles[1].name}" data-ng-click="userRole=userRoles[1]"><span class="revtab" data-ng-bind="userRoles[1].name">Service</span></li>
     </ul>
 </div>    

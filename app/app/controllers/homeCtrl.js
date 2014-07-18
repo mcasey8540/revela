@@ -21,31 +21,17 @@ revelaControllers.controller('HomeCtrl', ['$rootScope', '$scope', '$routeParams'
         }
 
         $scope.userRoles = [
-            {name: 'I\'m a', link: '#!'},
             {name: 'Tenant', link: '#!/tenants'},
-            {name: 'Service', link: '#!/service'},
+            {name: 'Service Provider', link: '#!/service'},
             {name: 'Property Manager', link: '#!/propertymanagers'},
             {name: 'Property Owner', link: '#!/propertyowners'}
         ];
 
         $scope.userRole = $scope.userRoles[0];
 
-        $scope.$watch('userRole', function(value) {
-            if (value.name !== "I\'m a" && $scope.userRoles.length === 5)
-            {
-                $scope.userRoles.shift();
-            }
-        });
-
         $scope.changeUserRole = function() {
-            
-            if ($scope.userRoles.length === 5)
-            {
-//                $scope.userRoles.shift();
-            }
             $location.hash('revelatabspage');
             $anchorScroll();
-
         };
 
         function changeBackground(position) {

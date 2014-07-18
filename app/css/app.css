@@ -30,7 +30,7 @@
 }
 
 body{
-    margin-top: 120px;
+    margin-top: 70px;
     font-family:"Trebuchet MS";   
 }
 
@@ -57,15 +57,16 @@ body{
 .city-image{
     overflow: hidden;
     width: 100%;
-    height: 570px;
+    height: 620px;
 }
 
 #brand-logo{
-  width: 120px;
+  width: 130px;
+  box-shadow: 4px 4px 2px lightgrey;
 }
 
 .navbar{
-  min-height: 120px;
+  min-height: 75px;
 }
 
 #footer-divider{
@@ -86,7 +87,7 @@ body{
     position: absolute;
     vertical-align: middle;
     text-align: center;
-    top: 200px;
+    top: 230px;
     width: 300px;  
     padding: 5px; 
 }
@@ -112,8 +113,8 @@ body{
     padding: 10px 15px;
     margin-right: 2px;
     line-height: 1.42857143;
-    border: 1px solid transparent;
-    border-radius: 4px 4px 0 0; 
+    border: 1px solid #D6D6D6;
+    border-radius: 15px 15px 0 0; 
     cursor: pointer;
 }
 
@@ -124,3 +125,14 @@ body{
     display:block;   
 }
 
+#selecttitle{
+    font-size: 40px;
+    height: 50px;
+    left: 60%;
+    color: #fff;
+    line-height: 40px;
+    position: absolute;
+    top: 230px;
+    width: 300px;
+    padding: 5px;
+}
