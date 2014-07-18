@@ -53,6 +53,17 @@ body{
   height: 20px;
   width: 100px;
 }*/
+.navbar-nav.navbar-right {
+    padding: 20px;
+}
+
+.navbar-nav.navbar-right>li {
+    padding: 5px;
+}
+
+.navbar-nav.navbar-right:last-child {
+    margin-right: -15px;
+}
 
 .city-image{
     overflow: hidden;
