@@ -15,12 +15,12 @@ revelaFactories.factory('error404Interceptor', ['$q', '$rootScope', function ($q
     }
  
 }]);
-
-revelaFactories.factory('UserSidUsage', ['$http', '$rootScope',
-  function ($http, $rootScope) {
-      return {
-          query: function (params) {
-              return $http({ method: 'GET', url: $rootScope.rootUrl + '/api/userusageapi', params: params });
-          }
-      }
-  }]);
+//
+//revelaFactories.factory('UserSidUsage', ['$http', '$rootScope',
+//  function ($http, $rootScope) {
+//      return {
+//          query: function (params) {
+//              return $http({ method: 'GET', url: $rootScope.rootUrl + '/api/userusageapi', params: params });
+//          }
+//      }
+//  }]);

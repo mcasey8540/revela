@@ -5,7 +5,6 @@ revelaControllers.controller('HomeCtrl', ['$rootScope', '$scope', '$routeParams'
 
 
         $scope.intialize = function() {
-
             $scope.currentcity = "./img/cities/New_York.png";
 
             //Ensures that geolocation is enabled
@@ -54,10 +53,6 @@ revelaControllers.controller('HomeCtrl', ['$rootScope', '$scope', '$routeParams'
                         //Obtains address and html element used to display background
                         var address = results[i].formatted_address;
                         var geo_container = $('.geo_container');
-
-
-                        console.log(address);
-
 
                         //Indicates whether or not a city was matched
                         var matchFound = false;
