@@ -7,17 +7,9 @@
 
 <div id="revelatabspage">
     <ul class="nav nav-tabs revelatabs" role="tablist">
-      <li class="active"><a href="#!" role="tab" data-toggle="tab">Tenants</a></li>
-      <li><a href="#!/profile" role="tab" data-toggle="tab">Property Managers</a></li>
-      <li><a href="#!/messages" role="tab" data-toggle="tab">Property Owners</a></li>
-      <li><a href="#!/settings" role="tab" data-toggle="tab">Service</a></li>
+      <li data-ng-class="{ active : userRole.name=='Tenant'}" data-ng-click="userRole=userRoles[0]"><span class="revtab">Tenant</span></li>
+      <li data-ng-class="{ active : userRole.name=='Property Manager'}" data-ng-click="userRole=userRoles[2]"><span class="revtab">Property Manager</span></li>
+      <li data-ng-class="{ active : userRole.name=='Property Owner'}" data-ng-click="userRole=userRoles[3]"><span class="revtab">Property Owner</span></li>
+      <li data-ng-class="{ active : userRole.name=='Service' }" data-ng-click="userRole=userRoles[1]"><span class="revtab" >Service</span></li>
     </ul>
-
-    <!-- Tab panes -->
-    <div id="revelatabs" class="tab-content revelatabs">
-      <div class="tab-pane active" id="home">...</div>
-      <div class="tab-pane" id="profile">...</div>
-      <div class="tab-pane" id="messages">...</div>
-      <div class="tab-pane" id="settings">...</div>
-    </div>
 </div>    

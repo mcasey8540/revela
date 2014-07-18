@@ -38,11 +38,12 @@ revelaControllers.controller('HomeCtrl', ['$rootScope', '$scope', '$routeParams'
         });
 
         $scope.changeUserRole = function() {
+            
             if ($scope.userRoles.length === 5)
             {
-                $scope.userRoles.shift();
+//                $scope.userRoles.shift();
             }
-            $location.hash('revelatabs');
+            $location.hash('revelatabspage');
             $anchorScroll();
 
         };
