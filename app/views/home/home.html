@@ -3,6 +3,12 @@ $( document ).ready(function() {
     
     var currenth = 0;
     
+    $(".revtab").click(function(){
+          $(".puzzle-text").fadeOut(500); 
+          $(".puzzle-text").fadeIn(1000); 
+    });
+    
+    
     $( "#revelatabspage" ).mouseenter(function() {
         if(currenth !== 50){
             $( ".jigsaw1" ).animate({ "left": "+=50px" }, "slow" );
