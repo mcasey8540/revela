@@ -49,26 +49,30 @@ $( document ).ready(function() {
 
     <div class="puzzle-container top">
         <div class="jigsaw1">
+          <span data-ng-bind="userRole.msg1" class="puzzle-text"></span>            
           <span class="r"></span>
           <span class="b"></span>
         </div>  
-        <div class="jigsaw4">            
+        <div class="jigsaw4"> 
+          <span data-ng-bind="userRole.msg2" class="puzzle-text"></span>   
           <span class="l"></span>
-    <!--	  <span class="t"></span>-->
           <span class="b"></span>
         </div>
     </div>
     <div class="puzzle-container bottom">
         <div class="jigsaw2">
+          <span data-ng-bind="userRole.msg3" class="puzzle-text"></span>   
           <span class="t"></span>
           <span class="r"></span>
         </div> 
 
-        <div class="jigsaw3">            
+        <div class="jigsaw3"> 
+          <span data-ng-bind="userRole.msg4" class="puzzle-text"></span>  
           <span class="l"></span>
           <span class="t"></span>          
         </div>
     </div>
+    
 
 
      

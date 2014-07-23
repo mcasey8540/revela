@@ -18,12 +18,13 @@ revelaControllers.controller('HomeCtrl', ['$rootScope', '$scope', '$routeParams'
             console.log("geolocaiton error");
             console.log(PositionError);
         }
-
+        
+      
         $scope.userRoles = [
-            {name: 'Tenant', link: '#!/tenants'},
-            {name: 'Service Provider', link: '#!/service'},
-            {name: 'Property Manager', link: '#!/propertymanagers'},
-            {name: 'Property Owner', link: '#!/propertyowners'}
+            {name: 'Tenant', link: '#!/tenants', msg1:"Property Management" ,msg2:"Payments", msg3:"Services Marketplace", msg4:"Professional Real Estate Services" },
+            {name: 'Service Provider', link: '#!/service', msg1:"Deep Market Place" ,msg2:"Advanced Search and Matching", msg3:"Seamless Reporting", msg4:"Growing and Fostering Collaborations"},
+            {name: 'Property Manager', link: '#!/propertymanagers', msg1:"Integrated Property Management Tools" ,msg2:"Efficient Payments", msg3:"Cost Effective Scheduling", msg4:"Seamless Reporting Tools and Venue"},
+            {name: 'Property Owner', link: '#!/propertyowners', msg1:"Property Management" ,msg2:"Payments", msg3:"Services Marketplace", msg4:"Professional Real Estate services"}
         ];
 
         $scope.userRole = $scope.userRoles[0];
@@ -32,6 +33,8 @@ revelaControllers.controller('HomeCtrl', ['$rootScope', '$scope', '$routeParams'
             $location.hash('revelatabspage');
             $anchorScroll();
         };
+        
+ 
 
         function changeBackground(position) {
 

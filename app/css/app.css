@@ -418,7 +418,17 @@ body{
     z-index: -1;
 }
 
-
+.puzzle-text{
+    width: 300px;
+    height: 200px;
+    font-size: 25px;
+    line-height: 100%;
+    padding: 65px;
+    color: #fff;
+    display: table-cell;
+    vertical-align:middle;
+    text-align:center;
+}
 
 
 
