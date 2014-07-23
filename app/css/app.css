@@ -152,8 +152,14 @@ body{
     Puzzle Pieces
 */
 
+.puzzle-container{
+    margin-left: 120px;
+    width: 800px;
+}
+
+
 .jigsaw1 {
-  font-size: 35px; 
+  font-size: 50px; 
   width: 6em;
   height: 6em;
   margin: 50px;
@@ -166,7 +172,7 @@ body{
 
 .jigsaw1,
 .jigsaw1 span {
- background-color: #0284cf; 
+ background-color: #B8DBFF; 
 }
 
 
@@ -217,7 +223,7 @@ body{
 }
 
 .jigsaw2 {
- font-size: 35px; 
+ font-size: 50px; 
   width: 6em;
   height: 6em;
   margin: 50px;
@@ -230,7 +236,7 @@ body{
 
 .jigsaw2,
 .jigsaw2 span {
- background-color: red; 
+ background-color: #EC6134; 
 }
 
 .jigsaw2 .t {
@@ -281,7 +287,7 @@ body{
 
 
 .jigsaw3 {
- font-size: 35px; 
+ font-size: 50px; 
   width: 6em;
   height: 6em;
   margin: 50px;
@@ -290,11 +296,12 @@ body{
   -moz-border-radius: .5em;
   border-radius: .5em;
  float: left;
+ z-index: -1;
 }
 
 .jigsaw3,
 .jigsaw3 span {
- background-color: greenyellow; 
+ background-color: #C0C0C0; 
 }
 
 .jigsaw3 .t {
@@ -344,7 +351,8 @@ body{
 }
 
 .jigsaw4 {
- font-size: 35px; 
+ z-index: -1;
+ font-size: 50px; 
   width: 6em;
   height: 6em;
   margin: 50px;
@@ -357,7 +365,7 @@ body{
 
 .jigsaw4,
 .jigsaw4 span {
- background-color: yellow; 
+ background-color: #CCFF66; 
 }
 
 .jigsaw4 .t {
@@ -405,3 +413,12 @@ body{
   border-radius: 4em;
   background-color: #fff;
 }
+
+.puzzle-container .top{
+    z-index: -1;
+}
+
+
+
+
+

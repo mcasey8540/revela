@@ -1,3 +1,36 @@
+<script>
+$( document ).ready(function() {
+    
+    var currenth = 0;
+    
+    $( "#revelatabspage" ).mouseenter(function() {
+        if(currenth !== 50){
+            $( ".jigsaw1" ).animate({ "left": "+=50px" }, "slow" );
+            $( ".jigsaw4" ).animate({ "left": "-=50px" }, "slow" );
+            $( ".jigsaw2" ).animate({ "left": "+=50px" }, "slow" );
+            $( ".jigsaw3" ).animate({ "left": "-=50px" }, "slow" ); 
+            $( ".jigsaw2" ).animate({ "top": "-=105px" }, "slow" );
+            $( ".jigsaw3" ).animate({ "top": "-=105px" }, "slow" );
+            currenth = 50;
+        }       
+    });
+    
+    $( "#revelatabspage" ).mouseleave(function() {
+        if(currenth === 50){
+            $( ".jigsaw1" ).animate({ "left": "-=50px" }, "slow" );
+            $( ".jigsaw4" ).animate({ "left": "+=50px" }, "slow" ); 
+            $( ".jigsaw2" ).animate({ "left": "-=50px" }, "slow" );
+            $( ".jigsaw3" ).animate({ "left": "+=50px" }, "slow" );
+            $( ".jigsaw2" ).animate({ "top": "+=105px" }, "slow" );
+            $( ".jigsaw3" ).animate({ "top": "+=105px" }, "slow" );            
+
+            currenth = 0;
+        }
+    });    
+});
+</script>
+
+
 <div class="city-image" >
     <span id="selecttitle">I'm a</span>
     <select class="userrole-dropdown" data-ng-model="userRole" data-ng-change="changeUserRole()" data-ng-options="role.name for role in userRoles"></select>   
@@ -14,7 +47,7 @@
       <li data-ng-class="{ active : userRole.name==userRoles[1].name}" data-ng-click="userRole=userRoles[1]"><span class="revtab" data-ng-bind="userRoles[1].name">Service</span></li>
     </ul>
 
-    <div style="width: 800px;">
+    <div class="puzzle-container top">
         <div class="jigsaw1">
           <span class="r"></span>
           <span class="b"></span>
@@ -25,7 +58,7 @@
           <span class="b"></span>
         </div>
     </div>
-    <div style="width: 800px;">
+    <div class="puzzle-container bottom">
         <div class="jigsaw2">
           <span class="t"></span>
           <span class="r"></span>
