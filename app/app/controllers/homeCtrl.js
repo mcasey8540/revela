@@ -30,8 +30,9 @@ revelaControllers.controller('HomeCtrl', ['$rootScope', '$scope', '$routeParams'
         $scope.userRole = $scope.userRoles[0];
 
         $scope.changeUserRole = function() {
-            $location.hash('revelatabspage');
-            $anchorScroll();
+            $('html,body').animate({scrollTop: 650}, 750);
+            //$location.hash('revelatabspage');
+            //$anchorScroll();
         };
         
  
