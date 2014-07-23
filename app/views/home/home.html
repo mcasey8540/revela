@@ -13,27 +13,30 @@
       <li data-ng-class="{ active : userRole.name==userRoles[3].name}" data-ng-click="userRole=userRoles[3]"><span class="revtab" data-ng-bind="userRoles[3].name">Property Owner</span></li>
       <li data-ng-class="{ active : userRole.name==userRoles[1].name}" data-ng-click="userRole=userRoles[1]"><span class="revtab" data-ng-bind="userRoles[1].name">Service</span></li>
     </ul>
-    <svg height="160" width="1000">
-    <polygon points="200,100 550,10 900,100 900,150 700,150 550,100 400,150 200,150"
-          style="stroke:#660000; fill:#cc3333; stroke-width: 0; margin-top: 20px;"/>
-    </svg>
-    <div style="display:inline-block;">
-        <svg height="160" width="400">
-        <polygon points="200,0 450,0 450,150 200,150"
-              style="stroke:#660000; fill:#cc3333; stroke-width: 0;"/>
-        </svg>
-        <svg height="160" width="300">
-        <polygon points="0,0 300,0 300,150 0,150"
-              style="stroke:#660000; fill:#fff; stroke-width: 0;"/>
-        </svg>        
-        <svg height="160" width="300">
-        <polygon points="0,0 190,0 190,150 0,150"
-              style="stroke:#660000; fill:#cc3333; stroke-width: 0;"/>
-        </svg>        
+
+    <div style="width: 800px;">
+        <div class="jigsaw1">
+          <span class="r"></span>
+          <span class="b"></span>
+        </div>  
+        <div class="jigsaw4">            
+          <span class="l"></span>
+    <!--	  <span class="t"></span>-->
+          <span class="b"></span>
+        </div>
     </div>
-    <svg height="160" width="1000">
-    <polygon points="200,0 400,0  550,70 700,0 900,0 900,150, 200,150"
-          style="stroke:#660000; fill:#cc3333; stroke-width: 0;"/>
-    </svg>    
-        
+    <div style="width: 800px;">
+        <div class="jigsaw2">
+          <span class="t"></span>
+          <span class="r"></span>
+        </div> 
+
+        <div class="jigsaw3">            
+          <span class="l"></span>
+          <span class="t"></span>          
+        </div>
+    </div>
+
+
+     
 </div>
