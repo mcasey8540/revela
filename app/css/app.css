@@ -47,12 +47,6 @@ body{
     Navbar
 */
 
-/*.brand
-{
-  background: url(img/brand/revela_logo.png) no-repeat left center;
-  height: 20px;
-  width: 100px;
-}*/
 .navbar-nav.navbar-right {
     padding: 20px;
 }
@@ -431,7 +425,4 @@ body{
     text-align:center;
 }
 
-.revela-roof{
-    margin-left: 113px;
-}
 
