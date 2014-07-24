@@ -17,6 +17,7 @@ $( document ).ready(function() {
             $( ".jigsaw3" ).animate({ "left": "-=50px" }, "slow" ); 
             $( ".jigsaw2" ).animate({ "top": "-=105px" }, "slow" );
             $( ".jigsaw3" ).animate({ "top": "-=105px" }, "slow" );
+//            $( ".puzzle-pieces-all" ).animate({ "top": "-=50px" }, "slow" );
             currenth = 50;
         }       
     });
@@ -52,30 +53,35 @@ $( document ).ready(function() {
       <li data-ng-class="{ active : userRole.name==userRoles[3].name}" data-ng-click="userRole=userRoles[3]"><span class="revtab" data-ng-bind="userRoles[3].name">Property Owner</span></li>
       <li data-ng-class="{ active : userRole.name==userRoles[1].name}" data-ng-click="userRole=userRoles[1]"><span class="revtab" data-ng-bind="userRoles[1].name">Service</span></li>
     </ul>
-
-    <div class="puzzle-container top">
-        <div class="jigsaw1">
-          <span data-ng-bind="userRole.msg1" class="puzzle-text"></span>            
-          <span class="r"></span>
-          <span class="b"></span>
-        </div>  
-        <div class="jigsaw4"> 
-          <span data-ng-bind="userRole.msg2" class="puzzle-text"></span>   
-          <span class="l"></span>
-          <span class="b"></span>
+    
+<!--    <svg height="210" width="800" class="revela-roof">
+       <polygon points="100,120 410,20 710,120 710,160 100,160" style="fill: #4C4C4C;" />
+    </svg>   -->
+    <div class="puzzle-pieces-all"> 
+        <div class="puzzle-container top">
+            <div class="jigsaw1">
+              <span data-ng-bind="userRole.msg1" class="puzzle-text"></span>
+              <span class="r"></span>
+              <span class="b"></span>
+            </div>  
+            <div class="jigsaw4"> 
+              <span data-ng-bind="userRole.msg2" class="puzzle-text"></span>   
+              <span class="l"></span>
+              <span class="b"></span>
+            </div>
         </div>
-    </div>
-    <div class="puzzle-container bottom">
-        <div class="jigsaw2">
-          <span data-ng-bind="userRole.msg3" class="puzzle-text"></span>   
-          <span class="t"></span>
-          <span class="r"></span>
-        </div> 
+        <div class="puzzle-container bottom">
+            <div class="jigsaw2">
+              <span data-ng-bind="userRole.msg3" class="puzzle-text"></span>   
+              <span class="t"></span>
+              <span class="r"></span>
+            </div> 
 
-        <div class="jigsaw3"> 
-          <span data-ng-bind="userRole.msg4" class="puzzle-text"></span>  
-          <span class="l"></span>
-          <span class="t"></span>          
+            <div class="jigsaw3"> 
+              <span data-ng-bind="userRole.msg4" class="puzzle-text"></span>  
+              <span class="l"></span>
+              <span class="t"></span>          
+            </div>
         </div>
     </div>
     

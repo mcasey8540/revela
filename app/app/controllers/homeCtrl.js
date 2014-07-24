@@ -24,7 +24,7 @@ revelaControllers.controller('HomeCtrl', ['$rootScope', '$scope', '$routeParams'
             {name: 'Tenant', link: '#!/tenants', msg1:"Property Management" ,msg2:"Payments", msg3:"Services Marketplace", msg4:"Professional Real Estate Services" },
             {name: 'Service Provider', link: '#!/service', msg1:"Deep Market Place" ,msg2:"Advanced Search and Matching", msg3:"Seamless Reporting", msg4:"Growing and Fostering Collaborations"},
             {name: 'Property Manager', link: '#!/propertymanagers', msg1:"Integrated Property Management Tools" ,msg2:"Efficient Payments", msg3:"Cost Effective Scheduling", msg4:"Seamless Reporting Tools and Venue"},
-            {name: 'Property Owner', link: '#!/propertyowners', msg1:"Property Management" ,msg2:"Payments", msg3:"Services Marketplace", msg4:"Professional Real Estate services"}
+            {name: 'Property Owner', link: '#!/propertyowners', msg1:"Property Management" ,msg2:"Payments", msg3:"Services Marketplace", msg4:"Professional Real Estate Services"}
         ];
 
         $scope.userRole = $scope.userRoles[0];
